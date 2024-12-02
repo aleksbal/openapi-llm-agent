@@ -5,9 +5,9 @@ Generates agent descriptions for LLMs based on an OpenAPI specification. This li
 ## Objective
 THe goal is to create a system that:
 
-Parses an OpenAPI 3.0.0 specification file.
-Converts all endpoints, services, and schemas into a simplified JSON structure tailored for LLMs.
-Enables an LLM to understand APIs and invoke them effectively during conversations.
+- Parses an OpenAPI 3.0.0 specification file.
+- Converts all endpoints, services, and schemas into a simplified JSON structure tailored for LLMs.
+- Enables an LLM to understand APIs and invoke them effectively during conversations.
 
 It depends on some key considerations:
 
@@ -28,9 +28,9 @@ LLM-based integrations often fail because APIs are not well-documented in terms 
 Your idea could enable dynamic API invocation during conversations or tasks, particularly in systems like chatbots or automation tools.
 
 ## Challenges
-Complexity of OpenAPI Specs: Complex schemas, relationships, and edge cases in OpenAPI specs (like polymorphism or recursive schemas) can be tricky to translate into a simple JSON structure.
-LLM Fine-Tuning: To use this JSON effectively, the LLM may need specialized training or prompting strategies to understand the abstracted format.
-Error Handling: APIs often fail due to nuanced reasons (e.g., auth tokens, rate limits, malformed requests). Simplified representations might miss these operational details.
+- Complexity of OpenAPI Specs: Complex schemas, relationships, and edge cases in OpenAPI specs (like polymorphism or recursive schemas) can be tricky to translate into a simple JSON structure.
+- LLM Fine-Tuning: To use this JSON effectively, the LLM may need specialized training or prompting strategies to understand the abstracted format.
+- Error Handling: APIs often fail due to nuanced reasons (e.g., auth tokens, rate limits, malformed requests). Simplified representations might miss these operational details.
 
 ## Implementation Outline
 Here’s a plan for how this could be developed:
