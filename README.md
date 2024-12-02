@@ -48,7 +48,6 @@ Annotate parameters and responses with examples.
 C. Output Example
 
 ```json
-Copy code
 {
   "api_name": "Example API",
   "base_url": "https://api.example.com",
@@ -84,13 +83,14 @@ Create templates for prompting the LLM to use the above JSON format to:
 Understand API usage.
 Generate API calls based on conversational inputs.
 Process API responses and integrate them into the conversation.
-5. Would LLMs Understand This JSON?
-Yes, modern LLMs like GPT-4 or Claude can understand and work with such a JSON format. They are particularly adept at:
 
-Extracting the necessary details to construct requests.
-Understanding examples to infer required formats and parameters.
-Using concise and well-documented JSON structures.
-However, for real-time API invocation:
+## Would LLMs Understand This JSON?
+Modern LLMs like GPT-4 or Claude can understand and work with such a JSON format. They are particularly adept at:
+
+- Extracting the necessary details to construct requests.
+- Understanding examples to infer required formats and parameters.
+- Using concise and well-documented JSON structures.
+- However, for real-time API invocation:
 
 The LLM must be integrated with a runtime that executes API requests and handles dynamic responses.
 Post-processing logic (outside the LLM) will be needed to interpret and manage responses effectively.
