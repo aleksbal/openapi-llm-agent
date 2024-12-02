@@ -1,4 +1,4 @@
-# openapi-agent
+# LLM function calls to APIs described in OpenAPI 
 
 Generates agent descriptions for LLMs based on an OpenAPI specification. This little project touches on the intersection of API documentation, natural language processing (NLP), and large language models (LLMs).
 
