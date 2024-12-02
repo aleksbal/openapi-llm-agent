@@ -96,7 +96,7 @@ The LLM must be integrated with a runtime that executes API requests and handles
 Post-processing logic (outside the LLM) will be needed to interpret and manage responses effectively.
 
 ## Conclusion
-This is a feasible and impactful project. It addresses a genuine gap in API usability for LLM-driven applications. However, for full usability, the LLM will need to:
+This may be a feasible project. It addresses a gap in API usability for LLM-driven applications. However, for full usability, the LLM will need to:
 
-Be supported by a well-structured JSON schema.
-Leverage external runtime support for executing and validating API interactions.
+- Be supported by a well-structured JSON schema.
+- Leverage external runtime support for executing and validating API interactions.
