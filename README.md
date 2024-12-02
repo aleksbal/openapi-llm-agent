@@ -11,11 +11,11 @@ THe goal is to create a system that:
 
 It depends on some key considerations:
 
-A. Current Capabilities of LLMs
+A.  Current Capabilities of LLMs
 Understanding OpenAPI specs: LLMs can read and interpret OpenAPI specs to some extent, particularly well-documented ones. However, the verbosity and technical depth of OpenAPI specs (e.g., nested schemas, polymorphism) can overwhelm the understanding of current models unless simplified.
 LLM Limitations: LLMs are good at understanding simplified JSON structures, especially if these are formatted and annotated to prioritize clarity over technical precision.
 
-B. Simplified JSON Representation
+B.  Simplified JSON Representation
 A tailored JSON description could serve as an intermediate abstraction that focuses on key points:
 Endpoint summaries, methods, and paths.
 Input/output schemas.
@@ -23,7 +23,7 @@ Required headers/authentication mechanisms.
 Examples of input and output payloads.
 This makes the API more "digestible" for an LLM to understand and use in downstream applications.
 
-C. Use Case Viability
+C.  Use Case Viability
 LLM-based integrations often fail because APIs are not well-documented in terms of use-case-oriented examples. This JSON abstraction can fix that by focusing on actionable examples.
 Your idea could enable dynamic API invocation during conversations or tasks, particularly in systems like chatbots or automation tools.
 
