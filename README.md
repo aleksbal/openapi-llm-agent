@@ -1,12 +1,10 @@
 # LLM function calls to APIs described in OpenAPI 
 
-Generates agent descriptions for LLMs based on an OpenAPI specification. This little project touches on the intersection of API documentation, natural language processing (NLP), and large language models (LLMs).
-
 ## Objective
-THe goal is to create a system that:
+Generates agent descriptions for LLMs based on an OpenAPI specification:
 
 - Parses an OpenAPI 3.0.0 specification file.
-- Converts all endpoints, services, and schemas into a simplified JSON structure tailored for LLMs.
+- Converts all endpoints, services, and schemas into a simplified JSON based descriptions tailored for LLMs.
 - Enables an LLM to understand APIs and invoke them effectively during conversations.
 
 It depends on some key considerations:
