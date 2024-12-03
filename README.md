@@ -33,17 +33,17 @@ Your idea could enable dynamic API invocation during conversations or tasks, par
 ## Implementation Outline
 Here’s a plan for how this could be developed:
 
-A. Parse OpenAPI Spec
-Load and parse the OpenAPI 3.0.0 file.
-Extract all paths, methods, parameters, and request/response schemas.
-Gather global information (e.g., authentication requirements, base URL).
+### A. Parse OpenAPI Spec
+- Load and parse the OpenAPI 3.0.0 file.
+- Extract all paths, methods, parameters, and request/response schemas.
+- Gather global information (e.g., authentication requirements, base URL).
 
-B. Convert to Simplified JSON
-Summarize endpoints in a human-readable way (e.g., GET /users -> "Retrieve user data").
-Flatten request and response schemas into concise key-value mappings.
-Annotate parameters and responses with examples.
+### B. Convert to Simplified JSON
+- Summarize endpoints in a human-readable way (e.g., GET /users -> "Retrieve user data").
+- Flatten request and response schemas into concise key-value mappings.
+- Annotate parameters and responses with examples.
 
-C. Output Example
+### C. Output Example
 
 ```json
 {
@@ -76,11 +76,11 @@ C. Output Example
 }
 ```
 
-D. LLM Prompt Design
+### D. LLM Prompt Design
 Create templates for prompting the LLM to use the above JSON format to:
-Understand API usage.
-Generate API calls based on conversational inputs.
-Process API responses and integrate them into the conversation.
+- Understand API usage.
+- Generate API calls based on conversational inputs.
+- Process API responses and integrate them into the conversation.
 
 ## Would LLMs Understand This JSON?
 Modern LLMs like GPT-4 or Claude can understand and work with such a JSON format. They are particularly adept at:
